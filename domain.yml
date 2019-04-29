@@ -1,0 +1,32 @@
+intents:
+  - greet
+  - goodbye
+  - ask_whoisit
+  - out_of_scope
+
+actions:
+  - utter_greet
+  - utter_bye
+  - utter_whoisit
+  - my_default_fallback
+  - utter_default
+  - utter_master
+
+templates:
+  utter_greet:
+    - text: '你好呀'
+    - text: 'hello'
+    - text: 'hey'
+
+  utter_bye:
+    - text: '再见'
+    - text: 'bye~'
+
+  utter_whoisit:
+    - text: '我是机器人🤖，你可以叫我汤姆'
+
+  utter_default:
+    - text: '对不起，暂时还不能理解你的意思'
+
+  utter_master:
+    - text: '我的主人叫陈敏华，是一个程序员'

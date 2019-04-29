@@ -1,0 +1,2517 @@
+Rasa process starting
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/fv/z5blv8c103xdlnws5x2m5k8m0000gn/T/jieba.cache
+Loading model cost 0.781 seconds.
+Prefix dict has been built succesfully.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Available web server routes: 
+static                                             OPTIONS, GET, HEAD             /static/[filename]
+custom_webhook_CmdlineInput.health                 OPTIONS, GET, HEAD             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.8927993460120157}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: 你好呀, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hehe' with intent '{'name': 'goodbye', 'confidence': 0.5364739079540798}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '9'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_bye' with prob 1.00.
+Action 'utter_bye' ended with events '[]'
+Bot utterance 'BotUttered(text: bye~, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'what' with intent '{'name': 'goodbye', 'confidence': 0.5393650096813457}' and entities '[]'
+Logged UserUtterance - tracker now has 10 events
+Current slot values: 
+
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Calling action endpoint to run action 'action_default_fallback'.
+Action 'action_default_fallback' ended with events '[]'
+Current tracker state [{'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_action_default_fallback': 1.0, 'intent_goodbye': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '' with intent '{'name': None, 'confidence': 0.0}' and entities '[]'
+Logged UserUtterance - tracker now has 13 events
+Current slot values: 
+
+NLU confidence 0.0 is lower than NLU threshold 0.3. 
+Current tracker state [{'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_action_default_fallback': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Calling action endpoint to run action 'action_default_fallback'.
+Action 'action_default_fallback' ended with events '[]'
+Current tracker state [{'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_action_default_fallback': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0}, {'prev_action_default_fallback': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '' with intent '{'name': None, 'confidence': 0.0}' and entities '[]'
+Logged UserUtterance - tracker now has 16 events
+Current slot values: 
+
+NLU confidence 0.0 is lower than NLU threshold 0.3. 
+Current tracker state [{'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_action_default_fallback': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0}, {'prev_action_default_fallback': 1.0}, {'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Calling action endpoint to run action 'action_default_fallback'.
+Action 'action_default_fallback' ended with events '[]'
+Current tracker state [{'prev_action_default_fallback': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0}, {'prev_action_default_fallback': 1.0}, {'prev_action_listen': 1.0}, {'prev_action_default_fallback': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '' with intent '{'name': None, 'confidence': 0.0}' and entities '[]'
+Logged UserUtterance - tracker now has 19 events
+Current slot values: 
+
+NLU confidence 0.0 is lower than NLU threshold 0.3. 
+Current tracker state [{'prev_action_listen': 1.0}, {'prev_action_default_fallback': 1.0}, {'prev_action_listen': 1.0}, {'prev_action_default_fallback': 1.0}, {'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Calling action endpoint to run action 'action_default_fallback'.
+Action 'action_default_fallback' ended with events '[]'
+Current tracker state [{'prev_action_default_fallback': 1.0}, {'prev_action_listen': 1.0}, {'prev_action_default_fallback': 1.0}, {'prev_action_listen': 1.0}, {'prev_action_default_fallback': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'what' with intent '{'name': 'goodbye', 'confidence': 0.5393650096813457}' and entities '[]'
+Logged UserUtterance - tracker now has 22 events
+Current slot values: 
+
+Current tracker state [{'prev_action_listen': 1.0}, {'prev_action_default_fallback': 1.0}, {'prev_action_listen': 1.0}, {'prev_action_default_fallback': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Calling action endpoint to run action 'action_default_fallback'.
+Action 'action_default_fallback' ended with events '[]'
+Current tracker state [{'prev_action_default_fallback': 1.0}, {'prev_action_listen': 1.0}, {'prev_action_default_fallback': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_action_default_fallback': 1.0, 'intent_goodbye': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.8927993460120157}' and entities '[]'
+Logged UserUtterance - tracker now has 25 events
+Current slot values: 
+
+Current tracker state [{'prev_action_listen': 1.0}, {'prev_action_default_fallback': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_action_default_fallback': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Calling action endpoint to run action 'action_default_fallback'.
+Action 'action_default_fallback' ended with events '[]'
+Current tracker state [{'prev_action_default_fallback': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_action_default_fallback': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_action_default_fallback': 1.0, 'intent_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.8927993460120157}' and entities '[]'
+Logged UserUtterance - tracker now has 28 events
+Current slot values: 
+
+Current tracker state [{'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_action_default_fallback': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_action_default_fallback': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Calling action endpoint to run action 'action_default_fallback'.
+Action 'action_default_fallback' ended with events '[]'
+Current tracker state [{'prev_action_default_fallback': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_action_default_fallback': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_action_default_fallback': 1.0, 'intent_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.8927993460120157}' and entities '[]'
+Logged UserUtterance - tracker now has 31 events
+Current slot values: 
+
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_action_default_fallback': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_action_default_fallback': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Calling action endpoint to run action 'action_default_fallback'.
+Action 'action_default_fallback' ended with events '[]'
+Current tracker state [{'prev_action_default_fallback': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_action_default_fallback': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_action_default_fallback': 1.0, 'intent_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Scheduler started
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Scheduler started
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Scheduler started
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Scheduler started
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Scheduler started
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Scheduler started
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Scheduler started
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Scheduler started
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Scheduler started
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Scheduler started
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Scheduler started
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Scheduler started
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Scheduler started
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Scheduler started
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/fv/z5blv8c103xdlnws5x2m5k8m0000gn/T/jieba.cache
+Loading model cost 0.766 seconds.
+Prefix dict has been built succesfully.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Available web server routes: 
+static                                             HEAD, GET, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, GET, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: 你好呀, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '我也比这分被恶搞我哪个区鞥' with intent '{'name': 'goodbye', 'confidence': 0.44145476769618697}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '9'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_bye' with prob 1.00.
+Action 'utter_bye' ended with events '[]'
+Bot utterance 'BotUttered(text: bye~, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '分为范玮琪鞥而我却个' with intent '{'name': 'goodbye', 'confidence': 0.4442377667178271}' and entities '[]'
+Logged UserUtterance - tracker now has 10 events
+Current slot values: 
+
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Calling action endpoint to run action 'action_default_fallback'.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 15 events
+Current slot values: 
+
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Calling action endpoint to run action 'action_default_fallback'.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 20 events
+Current slot values: 
+
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Calling action endpoint to run action 'action_default_fallback'.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/fv/z5blv8c103xdlnws5x2m5k8m0000gn/T/jieba.cache
+Loading model cost 0.807 seconds.
+Prefix dict has been built succesfully.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Available web server routes: 
+static                                             HEAD, OPTIONS, GET             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, OPTIONS, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hello, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'bye' with intent '{'name': 'goodbye', 'confidence': 0.4599421970455564}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '9'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_bye' with prob 1.00.
+Action 'utter_bye' ended with events '[]'
+Bot utterance 'BotUttered(text: 再见, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hey' with intent '{'name': 'goodbye', 'confidence': 0.45956573776913057}' and entities '[]'
+Logged UserUtterance - tracker now has 10 events
+Current slot values: 
+
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Calling action endpoint to run action 'action_default_fallback'.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 15 events
+Current slot values: 
+
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Calling action endpoint to run action 'action_default_fallback'.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/fv/z5blv8c103xdlnws5x2m5k8m0000gn/T/jieba.cache
+Loading model cost 0.745 seconds.
+Prefix dict has been built succesfully.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Available web server routes: 
+static                                             HEAD, OPTIONS, GET             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, OPTIONS, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/fv/z5blv8c103xdlnws5x2m5k8m0000gn/T/jieba.cache
+Loading model cost 0.740 seconds.
+Prefix dict has been built succesfully.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Available web server routes: 
+static                                             HEAD, OPTIONS, GET             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, OPTIONS, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+
+Predicted next action using policy_0_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/fv/z5blv8c103xdlnws5x2m5k8m0000gn/T/jieba.cache
+Loading model cost 0.743 seconds.
+Prefix dict has been built succesfully.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Available web server routes: 
+static                                             GET, OPTIONS, HEAD             /static/[filename]
+custom_webhook_CmdlineInput.health                 GET, OPTIONS, HEAD             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+
+Predicted next action using policy_0_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/fv/z5blv8c103xdlnws5x2m5k8m0000gn/T/jieba.cache
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/fv/z5blv8c103xdlnws5x2m5k8m0000gn/T/jieba.cache
+Loading model cost 0.776 seconds.
+Prefix dict has been built succesfully.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Available web server routes: 
+static                                             HEAD, GET, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, GET, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hello, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+
+Feature 'intent_restart' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restart': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_4_MappingPolicy
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 15 events
+Current slot values: 
+
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hello, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '再见' with intent '{'name': 'goodbye', 'confidence': 0.4769238159604917}' and entities '[]'
+Logged UserUtterance - tracker now has 19 events
+Current slot values: 
+
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '9'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_bye' with prob 1.00.
+Action 'utter_bye' ended with events '[]'
+Bot utterance 'BotUttered(text: bye~, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.7697793002318589}' and entities '[]'
+Logged UserUtterance - tracker now has 23 events
+Current slot values: 
+
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 28 events
+Current slot values: 
+
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 33 events
+Current slot values: 
+
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+There is no active form
+Action 'action_listen' was predicted after a user message using policy_0_KerasPolicy. Predicting fallback action: action_default_fallback
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 38 events
+Current slot values: 
+
+Feature 'intent_restart' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}, {'prev_action_listen': 1.0, 'intent_restart': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_4_MappingPolicy
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 42 events
+Current slot values: 
+
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hey, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/fv/z5blv8c103xdlnws5x2m5k8m0000gn/T/jieba.cache
+Loading model cost 0.742 seconds.
+Prefix dict has been built succesfully.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+Available web server routes: 
+static                                             GET, OPTIONS, HEAD             /static/[filename]
+custom_webhook_CmdlineInput.health                 GET, OPTIONS, HEAD             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+
+Predicted next action using policy_0_FallbackPolicy
+Predicted next action 'my_default_fallback' with prob 1.00.
+Calling action endpoint to run action 'my_default_fallback'.
+Action 'my_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/fv/z5blv8c103xdlnws5x2m5k8m0000gn/T/jieba.cache
+Loading model cost 0.749 seconds.
+Prefix dict has been built succesfully.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Available web server routes: 
+static                                             HEAD, GET, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, GET, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: 你好呀, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '哈哈哈' with intent '{'name': 'goodbye', 'confidence': 0.42820629708709496}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '9'
+User 'default' has to affirm intent 'goodbye'.
+There is no active form
+Predicted next action using policy_2_TwoStageFallbackPolicy
+Predicted next action 'action_default_ask_affirmation' with prob 1.00.
+Action 'action_default_ask_affirmation' ended with events '[]'
+Bot utterance 'BotUttered(text: Did you mean 'goodbye'?, data: {
+  "buttons": [
+    {
+      "title": "Yes",
+      "payload": "/goodbye"
+    },
+    {
+      "title": "No",
+      "payload": "/out_of_scope"
+    }
+  ]
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_action_default_ask_affirmation': 1.0, 'intent_goodbye': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'prev_action_default_ask_affirmation': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_2_TwoStageFallbackPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/fv/z5blv8c103xdlnws5x2m5k8m0000gn/T/jieba.cache
+Loading model cost 0.743 seconds.
+Prefix dict has been built succesfully.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Available web server routes: 
+static                                             HEAD, OPTIONS, GET             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, OPTIONS, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hello, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '哈哈哈' with intent '{'name': 'goodbye', 'confidence': 0.42820629708709496}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '9'
+NLU confidence 0.42820629708709496 is lower than NLU threshold 0.6. 
+There is no active form
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hello, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 15 events
+Current slot values: 
+
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: 你好呀, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'yes' with intent '{'name': 'goodbye', 'confidence': 0.4596013504792564}' and entities '[]'
+Logged UserUtterance - tracker now has 19 events
+Current slot values: 
+
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '9'
+NLU confidence 0.4596013504792564 is lower than NLU threshold 0.6. 
+There is no active form
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '再见' with intent '{'name': 'goodbye', 'confidence': 0.4769238159604917}' and entities '[]'
+Logged UserUtterance - tracker now has 24 events
+Current slot values: 
+
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '9'
+NLU confidence 0.4769238159604917 is lower than NLU threshold 0.6. 
+There is no active form
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 29 events
+Current slot values: 
+
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hello, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '哈哈哈' with intent '{'name': 'goodbye', 'confidence': 0.42820629708709496}' and entities '[]'
+Logged UserUtterance - tracker now has 33 events
+Current slot values: 
+
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '9'
+NLU confidence 0.42820629708709496 is lower than NLU threshold 0.6. 
+There is no active form
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 38 events
+Current slot values: 
+
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hello, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '再见' with intent '{'name': 'goodbye', 'confidence': 0.4769238159604917}' and entities '[]'
+Logged UserUtterance - tracker now has 42 events
+Current slot values: 
+
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '9'
+NLU confidence 0.4769238159604917 is lower than NLU threshold 0.6. 
+There is no active form
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7659529006706811}' and entities '[]'
+Logged UserUtterance - tracker now has 47 events
+Current slot values: 
+
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hey, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '再见' with intent '{'name': 'goodbye', 'confidence': 0.4769238159604917}' and entities '[]'
+Logged UserUtterance - tracker now has 51 events
+Current slot values: 
+
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '9'
+NLU confidence 0.4769238159604917 is lower than NLU threshold 0.6. 
+There is no active form
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'ls' with intent '{'name': 'goodbye', 'confidence': 0.4569319985571423}' and entities '[]'
+Logged UserUtterance - tracker now has 56 events
+Current slot values: 
+
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '9'
+NLU confidence 0.4569319985571423 is lower than NLU threshold 0.6. 
+There is no active form
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/fv/z5blv8c103xdlnws5x2m5k8m0000gn/T/jieba.cache
+Loading model cost 0.744 seconds.
+Prefix dict has been built succesfully.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Available web server routes: 
+static                                             OPTIONS, HEAD, GET             /static/[filename]
+custom_webhook_CmdlineInput.health                 OPTIONS, HEAD, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7615150771274958}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+
+Current tracker state [None, None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hello, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '再见' with intent '{'name': 'goodbye', 'confidence': 0.519917076819218}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '9'
+NLU confidence 0.519917076819218 is lower than NLU threshold 0.6. 
+There is no active form
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '再见啦' with intent '{'name': 'goodbye', 'confidence': 0.48230364228448674}' and entities '[]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '9'
+NLU confidence 0.48230364228448674 is lower than NLU threshold 0.6. 
+There is no active form
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/fv/z5blv8c103xdlnws5x2m5k8m0000gn/T/jieba.cache
+Loading model cost 0.747 seconds.
+Prefix dict has been built succesfully.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Available web server routes: 
+static                                             GET, OPTIONS, HEAD             /static/[filename]
+custom_webhook_CmdlineInput.health                 GET, OPTIONS, HEAD             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7615150771274958}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hey, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '再见' with intent '{'name': 'goodbye', 'confidence': 0.519917076819218}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '9'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_bye' with prob 1.00.
+Action 'utter_bye' ended with events '[]'
+Bot utterance 'BotUttered(text: bye~, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7615150771274958}' and entities '[]'
+Logged UserUtterance - tracker now has 10 events
+Current slot values: 
+
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hello, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7615150771274958}' and entities '[]'
+Logged UserUtterance - tracker now has 14 events
+Current slot values: 
+
+Current tracker state [{'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: 你好呀, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7615150771274958}' and entities '[]'
+Logged UserUtterance - tracker now has 18 events
+Current slot values: 
+
+Current tracker state [{'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: 你好呀, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好呀' with intent '{'name': 'greet', 'confidence': 0.48771974868508816}' and entities '[]'
+Logged UserUtterance - tracker now has 22 events
+Current slot values: 
+
+Current tracker state [{'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: 你好呀, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.7718458505774097}' and entities '[]'
+Logged UserUtterance - tracker now has 26 events
+Current slot values: 
+
+Current tracker state [{'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: 你好呀, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hey' with intent '{'name': 'goodbye', 'confidence': 0.484460644649855}' and entities '[]'
+Logged UserUtterance - tracker now has 30 events
+Current slot values: 
+
+Current tracker state [{'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '9'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_bye' with prob 1.00.
+Action 'utter_bye' ended with events '[]'
+Bot utterance 'BotUttered(text: bye~, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}]
+Launch DeLorean...
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7615150771274958}' and entities '[]'
+Logged UserUtterance - tracker now has 34 events
+Current slot values: 
+
+Current tracker state [{'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hey, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你是谁' with intent '{'name': 'goodbye', 'confidence': 0.3246910040126743}' and entities '[]'
+Logged UserUtterance - tracker now has 38 events
+Current slot values: 
+
+Current tracker state [{'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '9'
+NLU confidence 0.3246910040126743 is lower than NLU threshold 0.4. 
+There is no active form
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_goodbye': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/fv/z5blv8c103xdlnws5x2m5k8m0000gn/T/jieba.cache
+Loading model cost 0.740 seconds.
+Prefix dict has been built succesfully.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Available web server routes: 
+static                                             HEAD, OPTIONS, GET             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, OPTIONS, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.7615150771274958}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hey, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你是谁' with intent '{'name': 'goodbye', 'confidence': 0.3246910040126743}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '9'
+NLU confidence 0.3246910040126743 is lower than NLU threshold 0.4. 
+There is no active form
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+
+Feature 'intent_restart' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restart': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'prev_action_listen': 1.0, 'intent_restart': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_greet' with prob 0.31.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hey, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_restart' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_restart' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restart': 1.0}, {'prev_utter_greet': 1.0, 'intent_restart': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'prev_utter_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.40.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你是谁' with intent '{'name': 'goodbye', 'confidence': 0.3246910040126743}' and entities '[]'
+Logged UserUtterance - tracker now has 15 events
+Current slot values: 
+
+Feature 'intent_restart' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_restart' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restart': 1.0}, {'prev_utter_greet': 1.0, 'intent_restart': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is no memorised next action
+NLU confidence 0.3246910040126743 is lower than NLU threshold 0.4. 
+There is no active form
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_restart' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_restart' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restart': 1.0}, {'prev_utter_greet': 1.0, 'intent_restart': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'prev_utter_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.40.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你是谁？' with intent '{'name': 'goodbye', 'confidence': 0.36502789014052067}' and entities '[]'
+Logged UserUtterance - tracker now has 20 events
+Current slot values: 
+
+Feature 'intent_restart' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_restart' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restart': 1.0}, {'prev_utter_greet': 1.0, 'intent_restart': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is no memorised next action
+NLU confidence 0.36502789014052067 is lower than NLU threshold 0.4. 
+There is no active form
+Predicted next action using policy_2_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: 对不起，暂时还不能理解你的意思, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_restart' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_restart' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_restart': 1.0}, {'prev_utter_greet': 1.0, 'intent_restart': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'prev_utter_greet': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.40.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/fv/z5blv8c103xdlnws5x2m5k8m0000gn/T/jieba.cache
+Loading model cost 0.751 seconds.
+Prefix dict has been built succesfully.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Available web server routes: 
+static                                             HEAD, GET, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, GET, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.9021746994677318}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: 你好呀, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你是谁' with intent '{'name': 'ask_whoisit', 'confidence': 0.5007652216935111}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '10'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_whoisit' with prob 1.00.
+Action 'utter_whoisit' ended with events '[]'
+Bot utterance 'BotUttered(text: 我是机器人🤖，你可以叫我汤姆, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '再见' with intent '{'name': 'goodbye', 'confidence': 0.8225440334412454}' and entities '[]'
+Logged UserUtterance - tracker now has 10 events
+Current slot values: 
+
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_whoisit' with prob 0.34.
+Action 'utter_whoisit' ended with events '[]'
+Bot utterance 'BotUttered(text: 我是机器人🤖，你可以叫我汤姆, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_whoisit': 1.0, 'intent_goodbye': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'prev_utter_whoisit': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.40.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '再见' with intent '{'name': 'goodbye', 'confidence': 0.8225440334412454}' and entities '[]'
+Logged UserUtterance - tracker now has 14 events
+Current slot values: 
+
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_whoisit': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_whoisit' with prob 0.32.
+Action 'utter_whoisit' ended with events '[]'
+Bot utterance 'BotUttered(text: 我是机器人🤖，你可以叫我汤姆, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_whoisit': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_whoisit': 1.0, 'intent_goodbye': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'prev_utter_whoisit': 1.0}]
+There is no memorised next action
+There is no active form
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.41.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.9021746994677318}' and entities '[]'
+Logged UserUtterance - tracker now has 18 events
+Current slot values: 
+
+Current tracker state [{'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_whoisit': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_whoisit': 1.0, 'intent_goodbye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hey, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_whoisit': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_whoisit': 1.0, 'intent_goodbye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.9021746994677318}' and entities '[]'
+Logged UserUtterance - tracker now has 22 events
+Current slot values: 
+
+Current tracker state [{'prev_utter_whoisit': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_whoisit': 1.0, 'intent_goodbye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: 你好呀, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_whoisit': 1.0, 'intent_goodbye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '再见' with intent '{'name': 'goodbye', 'confidence': 0.8225440334412454}' and entities '[]'
+Logged UserUtterance - tracker now has 26 events
+Current slot values: 
+
+Current tracker state [{'prev_utter_whoisit': 1.0, 'intent_goodbye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '9'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_bye' with prob 1.00.
+Action 'utter_bye' ended with events '[]'
+Bot utterance 'BotUttered(text: bye~, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}]
+Launch DeLorean...
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.9021746994677318}' and entities '[]'
+Logged UserUtterance - tracker now has 30 events
+Current slot values: 
+
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hello, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你是谁' with intent '{'name': 'ask_whoisit', 'confidence': 0.5007652216935111}' and entities '[]'
+Logged UserUtterance - tracker now has 34 events
+Current slot values: 
+
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '10'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_whoisit' with prob 1.00.
+Action 'utter_whoisit' ended with events '[]'
+Bot utterance 'BotUttered(text: 我是机器人🤖，你可以叫我汤姆, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.9021746994677318}' and entities '[]'
+Logged UserUtterance - tracker now has 38 events
+Current slot values: 
+
+Current tracker state [{'intent_goodbye': 1.0, 'prev_utter_bye': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hello, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你叫什么' with intent '{'name': 'ask_whoisit', 'confidence': 0.4937710406566525}' and entities '[]'
+Logged UserUtterance - tracker now has 42 events
+Current slot values: 
+
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '10'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_whoisit' with prob 1.00.
+Action 'utter_whoisit' ended with events '[]'
+Bot utterance 'BotUttered(text: 我是机器人🤖，你可以叫我汤姆, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.9021746994677318}' and entities '[]'
+Logged UserUtterance - tracker now has 46 events
+Current slot values: 
+
+Current tracker state [{'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hello, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你叫什么名字' with intent '{'name': 'ask_whoisit', 'confidence': 0.5109503214574536}' and entities '[]'
+Logged UserUtterance - tracker now has 50 events
+Current slot values: 
+
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '10'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_whoisit' with prob 1.00.
+Action 'utter_whoisit' ended with events '[]'
+Bot utterance 'BotUttered(text: 我是机器人🤖，你可以叫我汤姆, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'intent_ask_whoisit': 1.0, 'prev_action_listen': 1.0}, {'intent_ask_whoisit': 1.0, 'prev_utter_whoisit': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Added 'MitieNLP' to component cache. Key 'MitieNLP-/Users/chenminhua/workspace/nlp_notebook/bigtom/data/total_word_feature_extractor.dat'.
+Building prefix dict from the default dictionary ...
+Loading model from cache /var/folders/fv/z5blv8c103xdlnws5x2m5k8m0000gn/T/jieba.cache
+Loading model cost 0.759 seconds.
+Prefix dict has been built succesfully.
+Scheduler started
+Looking for jobs to run
+No jobs; waiting until a job is added
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/chenminhua/anaconda3/envs/rasa/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Available web server routes: 
+static                                             GET, OPTIONS, HEAD             /static/[filename]
+custom_webhook_CmdlineInput.health                 GET, OPTIONS, HEAD             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message '你的主人是谁' with intent '{'name': 'ask_master', 'confidence': 0.6542481801473495}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, None, None, {}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}]
+There is a memorised next action '13'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_master' with prob 1.00.
+Action 'utter_master' ended with events '[]'
+Bot utterance 'BotUttered(text: 我的主人叫陈敏华，是一个程序员, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}, {'prev_utter_master': 1.0, 'intent_ask_master': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你是谁写的' with intent '{'name': 'ask_master', 'confidence': 0.6395707680197313}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}, {'prev_utter_master': 1.0, 'intent_ask_master': 1.0}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}]
+There is a memorised next action '13'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_master' with prob 1.00.
+Action 'utter_master' ended with events '[]'
+Bot utterance 'BotUttered(text: 我的主人叫陈敏华，是一个程序员, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}, {'prev_utter_master': 1.0, 'intent_ask_master': 1.0}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}, {'prev_utter_master': 1.0, 'intent_ask_master': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}, {'prev_utter_master': 1.0, 'intent_ask_master': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你是谁' with intent '{'name': 'ask_whoisit', 'confidence': 0.7336469120120419}' and entities '[]'
+Logged UserUtterance - tracker now has 10 events
+Current slot values: 
+
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}, {'prev_utter_master': 1.0, 'intent_ask_master': 1.0}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}, {'prev_utter_master': 1.0, 'intent_ask_master': 1.0}, {'prev_action_listen': 1.0, 'intent_ask_whoisit': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'prev_action_listen': 1.0, 'intent_ask_whoisit': 1.0}]
+There is a memorised next action '10'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_whoisit' with prob 1.00.
+Action 'utter_whoisit' ended with events '[]'
+Bot utterance 'BotUttered(text: 我是机器人🤖，你可以叫我汤姆, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_action_listen': 1.0, 'intent_ask_master': 1.0}, {'prev_utter_master': 1.0, 'intent_ask_master': 1.0}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}, {'prev_utter_master': 1.0, 'intent_ask_master': 1.0}, {'prev_action_listen': 1.0, 'intent_ask_whoisit': 1.0}, {'prev_utter_whoisit': 1.0, 'intent_ask_whoisit': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_ask_whoisit': 1.0}, {'prev_utter_whoisit': 1.0, 'intent_ask_whoisit': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.9398303955145744}' and entities '[]'
+Logged UserUtterance - tracker now has 14 events
+Current slot values: 
+
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_utter_master': 1.0, 'intent_ask_master': 1.0}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}, {'prev_utter_master': 1.0, 'intent_ask_master': 1.0}, {'prev_action_listen': 1.0, 'intent_ask_whoisit': 1.0}, {'prev_utter_whoisit': 1.0, 'intent_ask_whoisit': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hello, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_action_listen': 1.0, 'intent_ask_master': 1.0}, {'prev_utter_master': 1.0, 'intent_ask_master': 1.0}, {'prev_action_listen': 1.0, 'intent_ask_whoisit': 1.0}, {'prev_utter_whoisit': 1.0, 'intent_ask_whoisit': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '再见' with intent '{'name': 'goodbye', 'confidence': 0.8799513949458813}' and entities '[]'
+Logged UserUtterance - tracker now has 18 events
+Current slot values: 
+
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_utter_master': 1.0, 'intent_ask_master': 1.0}, {'prev_action_listen': 1.0, 'intent_ask_whoisit': 1.0}, {'prev_utter_whoisit': 1.0, 'intent_ask_whoisit': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '9'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_bye' with prob 1.00.
+Action 'utter_bye' ended with events '[]'
+Bot utterance 'BotUttered(text: 再见, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_ask_whoisit': 1.0}, {'prev_utter_whoisit': 1.0, 'intent_ask_whoisit': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}]
+Launch DeLorean...
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你好' with intent '{'name': 'greet', 'confidence': 0.9398303955145744}' and entities '[]'
+Logged UserUtterance - tracker now has 22 events
+Current slot values: 
+
+Current tracker state [{'prev_utter_whoisit': 1.0, 'intent_ask_whoisit': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '8'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Action 'utter_greet' ended with events '[]'
+Bot utterance 'BotUttered(text: hello, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你的主人是谁' with intent '{'name': 'ask_master', 'confidence': 0.6542481801473495}' and entities '[]'
+Logged UserUtterance - tracker now has 26 events
+Current slot values: 
+
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}]
+There is a memorised next action '13'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_master' with prob 1.00.
+Action 'utter_master' ended with events '[]'
+Bot utterance 'BotUttered(text: 我的主人叫陈敏华，是一个程序员, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_action_listen': 1.0, 'intent_goodbye': 1.0}, {'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}, {'prev_utter_master': 1.0, 'intent_ask_master': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}, {'prev_utter_master': 1.0, 'intent_ask_master': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '你的主人叫什么' with intent '{'name': 'ask_master', 'confidence': 0.7278597718124207}' and entities '[]'
+Logged UserUtterance - tracker now has 30 events
+Current slot values: 
+
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_utter_bye': 1.0, 'intent_goodbye': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}, {'prev_utter_master': 1.0, 'intent_ask_master': 1.0}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, None, {}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}]
+There is a memorised next action '13'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'utter_master' with prob 1.00.
+Action 'utter_master' ended with events '[]'
+Bot utterance 'BotUttered(text: 我的主人叫陈敏华，是一个程序员, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_ask_master' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}, {'prev_utter_master': 1.0, 'intent_ask_master': 1.0}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}, {'prev_utter_master': 1.0, 'intent_ask_master': 1.0}]
+Launch DeLorean...
+Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_ask_master': 1.0}, {'prev_utter_master': 1.0, 'intent_ask_master': 1.0}]
+There is a memorised next action '0'
+There is no active form
+Predicted next action using policy_1_AugmentedMemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
