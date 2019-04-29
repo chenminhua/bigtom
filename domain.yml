@@ -3,6 +3,7 @@ intents:
   - goodbye
   - ask_whoisit
   - out_of_scope
+  - ask_master
 
 actions:
   - utter_greet

@@ -20,8 +20,10 @@ def assertIntent(text, intent):
 
 pprint(interpreter.parse("再见"))
 
-pprint(interpreter.parse("你是谁"))
+pprint(interpreter.parse("你叫什么名字"))
 
 pprint(interpreter.parse('你的主人是谁'))
 
 pprint(interpreter.parse("你好"))
+
+pprint(interpreter.parse("who are u"))
