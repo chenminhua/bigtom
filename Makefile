@@ -17,3 +17,6 @@ debug-cmdline:
 
 visualize:
 	python3 -m rasa_core.visualize -s data/core/ -d domain.yml -o story_graph.png
+
+slackbot:
+	python3 -m rasa_core.run -d models/dialogue -u models/current/nlu --port 5002 --credentials credentials.yml
