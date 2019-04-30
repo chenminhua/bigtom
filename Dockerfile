@@ -1,0 +1,1 @@
+FROM rasa/rasa_core_sdk:latest
