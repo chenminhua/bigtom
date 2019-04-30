@@ -4,6 +4,8 @@ intents:
   - ask_whoisit
   - out_of_scope
   - ask_master
+  - affirm
+  - deny
 
 actions:
   - utter_greet
@@ -12,6 +14,8 @@ actions:
   - my_default_fallback
   - utter_default
   - utter_master
+  - utter_master_info
+  - utter_cool
 
 templates:
   utter_greet:
@@ -30,4 +34,12 @@ templates:
     - text: '对不起，暂时还不能理解你的意思'
 
   utter_master:
-    - text: '我的主人叫陈敏华，是一个程序员'
+    - text: '我的主人叫陈敏华，是一个程序员，你想进一步了解他么'
+
+  utter_cool:
+    - text: 'OK, cool~'
+
+  utter_master_info:
+    - text: '博客： https://chenminhua.github.io \n微博： https://www.weibo.com/chenminhua91 \ngithub： https://github.com/chenminhua \n邮箱： chenmhgo@gmail.com'
+
+

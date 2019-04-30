@@ -5,6 +5,6 @@ policies:
   - name: AugmentedMemoizationPolicy
     max_history: 6
   - name: FallbackPolicy
-    nlu_threshold: 0.4
+    nlu_threshold: 0.3
     core_threshold: 0.3
   - name: FormPolicy

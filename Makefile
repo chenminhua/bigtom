@@ -18,6 +18,6 @@ debug-cmdline:
 visualize:
 	python3 -m rasa_core.visualize -s data/core/ -d domain.yml -o story_graph.png
 
-# slack endpoint 为 /webhooks/slack/webhook
 slackbot:
-	python -m rasa_core.run --enable_api -d models/dialogue -u models/current/nlu --port 5000 --credentials credentials.yml
+	nohup python3 -m rasa_core.run --enable_api -d models/dialogue -u models/current/nlu --port 5000 --credentials credentials.yml &
+# slack endpoint 为 /webhooks/slack/webhook

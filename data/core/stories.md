@@ -15,3 +15,8 @@
 ## ask_master
 * ask_master
   - utter_master
+* affirm
+  - utter_master_info
+* deny
+  - utter_cool
+

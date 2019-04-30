@@ -2,8 +2,15 @@
 
 - 你好
 - 早上好
+- 上午好
+- 中午好
+- 下午好
+- 晚上好
 - 你好呀
 - 您好
+- hello
+- hi
+- hey
 
 ## intent:goodbye
 
@@ -12,7 +19,37 @@
 - 再见
 - 明天见
 - byebye
+- 回头见
+- 下次再聊
 
+## intent:affirm
+- 好的
+- 是的
+- 好
+- 想
+- 愿意
+- 好呀
+- 当然
+- 当然啦
+- ok
+- yes
+- yep
+- yeah
+- yas
+
+## intent:deny
+- 不
+- 不用了
+- 不需要
+- 不好
+- 不了
+- 不了吧
+- 不必了
+- 不想
+- no
+- nope
+- not really
+- nah
 
 ## intent:ask_whoisit
 
@@ -68,6 +105,7 @@
 - 谁是你的作者？
 - 你的作者是谁？
 - 你的作者是？
+- 你的爸爸是谁？
 
 ## intent:out_of_scope
 
