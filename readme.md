@@ -17,5 +17,6 @@ http://blog.zhouzg.com.cn/archives/566
 
 make train-nlu
 make train-core
+make slackbot
 
 
